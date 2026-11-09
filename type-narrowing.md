@@ -1,5 +1,3 @@
-* What is Type Narrowing in TypeScript? Provide practical examples using typeof, instanceof, and the in operator.
-
 Type Narrowing is a core feature in TypeScript that allows us to take a variable with a broad, union type (such as string | number or a mix of different objects) and refine it into a more specific, predictable type within a conditional block (like an if statement).
 
 Because TypeScript performs static analysis (checking types before the code runs), it tracks the control flow of our application. When we use a runtime check (a type guard), TypeScript understands that a variable can only be of a specific type inside that block, allowing you to safely call methods or access properties specific to that type without compiler errors.
@@ -63,3 +61,6 @@ function makeNoise(animal: Dog | Cat) {
     return animal.meow();
   }
 }
+
+
+In conclusion, type narrowing bridges the gap between dynamic JavaScript runtime behavior and static TypeScript compilation safety. By mastering guards like typeof, instanceof, and the in operator, developers can write flexible yet completely secure applications.

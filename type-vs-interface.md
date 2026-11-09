@@ -1,4 +1,4 @@
-*What are the core differences between type aliases and interface in TypeScript? When should you choose one over the other?
+Choosing between type aliases and interface declarations is a vital architectural decision for TypeScript developers. While both constructs can define the shape of objects, they possess distinct underlying mechanics, capabilities, and use cases.
 
 =>Differences
 1. Declaration Merging
@@ -33,3 +33,5 @@ When we are building a public library where consumers might need to add or overr
 Choose type when:
 
 When we are working with unions (string | number), primitive aliases, tuples ([number, number]), or mapped/conditional utility types.
+
+In conclusion, mastering both constructs ensures clean and scalable code. Use interfaces for object-oriented blueprints and types for flexible type compositions.
